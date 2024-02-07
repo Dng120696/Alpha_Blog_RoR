@@ -4,4 +4,10 @@
 <p><strong>Title:<%=@article.title%> </strong></p>
 <p><strong>Description: <%=@article.description%> </strong></p>
 
-<td> <%= link_to 'Article', '/articles'%></td>
+<%= link_to 'Edit', edit_article_path(@article)%>
+<%= link_to 'Delete', article_path(@article),data: {turbo_confirm: "Are you sure?", turbo_method: :delete }%>
+
+<p>
+
+<%= button_to 'Return to Article Listing', '/articles', method: :get%>
+</p>

@@ -1,2 +1,7 @@
 <h1>this is home pages</h1>
-<td> <%= link_to 'Article', '/articles'%></td>
+<p>
+<%= button_to 'Article Listing', '/articles', method: :get%>
+</p>
+<p>
+<%= button_to 'About Page', about_path, method: :get%>
+</p>
