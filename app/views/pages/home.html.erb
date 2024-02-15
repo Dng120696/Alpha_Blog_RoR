@@ -1,7 +1,11 @@
-<h1>this is home pages</h1>
+<%# <%= stylesheet_link_tag('home')%>
+
+<div >
+<h1 >this is home pages</h1>
 <p>
-<%= button_to 'Article Listing', '/articles', method: :get%>
+<%=  button_to 'Article Listing', '/articles', method: :get%>
 </p>
 <p>
-<%= button_to 'About Page', about_path, method: :get%>
-</p>
+  <%= button_to 'About Page', about_path, method: :get%></p>
+</div>
+
